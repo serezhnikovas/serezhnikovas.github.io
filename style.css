@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Indie+Flower&family=Julee&display=swap");
+
+/* font-family: 'Architects Daughter', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Julee', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#a0bc9d 50%, #77ad7c 100%);
+  /* #a8c2a6 */
+  color: #f2f2f2;
+  font-family: "Architects Daughter", cursive;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  /* font-family: "Architects Daughter", cursive; */
+  font-size: 25px;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.navbar a {
+  /* font-family: "Architects Daughter", cursive; */
+  font-size: 20px;
+  color: #f2f2f2;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.6s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: bisque;
+}
+
+.home {
+  height: 100vh;
+  /* background: url(mainphoto.png) center / cover; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home-content {
+  max-width: 600px;
+  /* order: 2; */
+}
+
+.home-content h1 {
+  font-size: 45px;
+  /* line-height: 1.2; */
+}
+
+.home-content h3 {
+  font-size: 32px;
+  color: bisque;
+}
+
+.home-content p {
+  font-size: 18px;
+  margin: 10px 0 20px;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 600px;
+  height: 50px;
+}
+
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: bisque;
+  border: 2px solid bisque;
+  border-radius: 62% 38% 70% 30% / 44% 47% 53% 56%;
+  text-decoration: none;
+  font-size: 19px;
+  color: rgb(156, 183, 151);
+  /* letter-spacing: 1px; */
+  /* margin: 10px 50px; */
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn-box a:hover {
+  color: bisque;
+}
+
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: bisque;
+}
+
+.btn-box a:nth-child(2):hover {
+  color: rgb(156, 183, 151);
+}
+
+.btn-box a:nth-child(2)::before {
+  background: bisque;
+}
+
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(156, 183, 151);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+  width: 100%;
+}
+
+/* .home-img {
+} */
+
+.img {
+  max-width: 700px;
+  border-radius: 37% 63% 49% 51% / 66% 38% 62% 34%;
+  box-shadow: 0 0 10px bisque;
+  /* border: 1px solid bisque; */
+  /* padding: 5px; */
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 200px;
+  margin: 150px 0;
+}
+
+.links a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border: 2px solid bisque;
+  border-radius: 50%;
+  color: bisque;
+  font-size: 25px;
+  /* padding: 5px; */
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.links a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: bisque;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.links a:hover:before {
+  width: 100%;
+}
+
+.links a:hover {
+  color: rgb(156, 183, 151);
+}
